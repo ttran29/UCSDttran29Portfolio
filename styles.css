@@ -1,0 +1,231 @@
+body {
+  background-color: #201E20;
+}
+
+#header {
+  background-color:#bc8e5c;
+  overflow: hidden; 
+  padding: 10px;
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #201e209d;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Gabarito', sans-serif;
+}
+
+#profile-image-container {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+#profile-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+  width: 777px; 
+  height: 558px; 
+}
+
+h1 {
+  margin:0;
+  font-family: 'Gabarito', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgba(245, 245, 220, 0.763);
+  line-height: 1.5;
+}
+h2 {
+  color:#bc8e5c;
+  font-family: 'Gabarito', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h4 {
+  text-align: center;
+  color:#DDC3A5;
+  font-size: 25px;
+  font-family: 'Teko', sans-serif;
+}
+
+#about-me {
+  color: #DDC3A5; /* Preserving the text color */
+  padding: 20px;
+}
+
+#about-me h2 {
+  color: #bc8e5c; /* Preserving the header color */
+  font-family: 'Gabarito', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#about-me p {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 20px; /* Matching font size from your styles */
+}
+
+#hobbies {
+  color:#DDC3A5;
+  padding: 20px;
+}
+
+#projects {
+  color:#DDC3A5;
+  padding: 20px;
+}
+
+#contact {
+  color:#DDC3A5;
+  padding: 20px;
+}
+
+#testimonials {
+  text-align: center;
+  font-size: 25px;
+}
+
+.info {
+  text-align: center;
+  color:#DDC3A5;
+  font-size: 20px;
+  font-family: 'Teko', sans-serif;
+}
+
+
+.button-group {
+  padding: 20px 15%;
+  text-align: center;
+  font-family: 'Kalam', sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: .5rem 1rem; /* Adjust the padding to ensure buttons are not too big */
+    font-size: 1rem; /* Adjust font size for readability */
+    margin-bottom: 0.5rem; /* Add space between stacked buttons */
+  }
+}
+
+
+a:hover{color:white; cursor:grab;}
+
+/* this is for the hobbies */
+.info1 {
+  width: 75%; 
+  margin: auto; 
+  border-collapse: collapse; 
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Teko', sans-serif;
+}
+
+.info1 th, .info1 td {
+  border: 1px solid #ddd;
+  padding: 5px; 
+  text-align: left; 
+}
+
+.info1 tr {
+  margin-bottom: 10px;
+}
+
+/* .card-body {
+  height: 400px;
+  text-align: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-body-1 {
+  color: rgba(185, 54, 54, 0.824);
+  background-color: beige;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Gabarito', sans-serif;
+}
+
+.card-header-1 {
+  font-size:x-large;
+  font-weight: 400px;
+  width: 100%;
+  text-align: center;
+  color: #DDC3A5;
+  font-family: 'Teko', sans-serif;
+} */
+
+.card {
+  background-color: #201E20; /* Matching the body background */
+  color: #DDC3A5; /* Matching the text color of the About Me section */
+  border: 1px solid #bc8e5c; /* Border color to match header */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); /* Adding a subtle shadow */
+}
+
+.card-header {
+  background-color: #bc8e5c; /* Matching the header color */
+  color: #201E20; /* Contrast color for the text */
+  font-family: 'Gabarito', sans-serif;
+  font-size: 25px; /* Adjusted size for better readability */
+  padding: 0.75rem 1.25rem;
+  text-align: center; /* Center aligning the header text */
+}
+
+.card-body {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 20px; /* Consistent with the About Me paragraph */
+  padding: 1.25rem; /* Spacing inside the card */
+  text-align: center; /* Center aligning the body text */
+}
+
+/* Ensures the cards are equal height within the same row */
+.row .d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .col-md-4 {
+  display: flex;
+  flex: 1;
+  padding: 15px; /* Spacing between cards */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+  .row .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px; /* Space between cards when they stack on small screens */
+  }
+}
